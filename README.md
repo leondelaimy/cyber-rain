@@ -2,7 +2,7 @@
   Cyber Rain
 </h1>
 <p align="center">
-  p5 sketches of matrix rain
+  matrix rain p5 sketches
 </p>
 <br />
 <div align="center">
