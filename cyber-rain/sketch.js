@@ -15,11 +15,11 @@ function setup() {
 
   // Create a single stream on the left edge
   leftStream = new Stream();
-  leftStream.generateSymbols(symbolSize, random(-2000, 0));
+  leftStream.generateSymbols(symbolSize, -50);
 
   // Create a single stream on the right edge
   rightStream = new Stream();
-  rightStream.generateSymbols(width - symbolSize * 2, random(-2000, 0));
+  rightStream.generateSymbols(width - symbolSize * 2, -500);
 
   textFont('Share Tech Mono');
   textSize(symbolSize);
@@ -59,7 +59,7 @@ class Stream {
   constructor() {
     this.symbols = [];
     this.totalSymbols = round(random(5, 35));
-    this.speed = random(0, 1); // Slowed down rain effect
+    this.speed = random(0.5, 1); // Slowed down rain effect
     this.highlightPosition = 0; // Track the position of the highlight effect
   }
 
